@@ -14,4 +14,4 @@ def test_find_button_cart(browser):
     browser.get(link)
     time.sleep(5)
     button = browser.find_element(By.XPATH,"//button[@class='btn btn-lg btn-primary btn-add-to-basket']")
-
+    assert button , "not found"
